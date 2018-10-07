@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "multimodal-conv-sample",
+    "dev": "multimodal-conv-sample"
+  }
+}
