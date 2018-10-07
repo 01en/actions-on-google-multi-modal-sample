@@ -47,7 +47,7 @@ app.intent('Today Dog', conv => {
 })
 
 /**
- * わんこの詳細を確認
+ * わんこの詳細を確認 - yes
  */
 app.intent('Today Dog - yes', conv => {
     const dogName = conv.data.dogName
@@ -78,6 +78,14 @@ app.intent('Today Dog - yes', conv => {
         }
     }
 })
+
+/**
+ * わんこの詳細を確認 - no
+ */
+app.intent('Today Dog - no', conv => {
+    conv.close("また、明日も待っているワン")
+})
+
 
 /**
  * 新規Surface
